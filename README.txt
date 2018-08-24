@@ -1,3 +1,6 @@
+A note-taking website written in Python, MySQL, HTML, CSS, Javascript, Jquery, and utilizing the Flask framework. The website features user login and storing the user information along with a dynamic search function. The website was created to demonstrate my knowledge of web devlopment, but the website itself is pretty useful to keep notes for myself. 
+
+
 To run the app: set FLASK_APP=microblog.py    and then type in: flask run
 
 To create the database:
@@ -12,11 +15,3 @@ To interact with the database:
     db.session.add(u)
     db.session.commit() #Makes permanent changes to the database
 
-    u = User.query.get(1) #Gets the user who has the user ID of 1
-
-    u #Will return the user at hand
-
-    To refresh the database:  #This is in the flask shell
-    users = User.query.all()
-    for u in users:
-         db.session.delete(u)
